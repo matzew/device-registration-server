@@ -5,7 +5,7 @@
   <groupId>net.wessendorf.wildfly.swarm</groupId>
   <artifactId>device-registration-server</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
 
   <properties>
     <version.wildfly.swarm>2017.1.1</version.wildfly.swarm>
@@ -29,12 +29,15 @@
   </dependencyManagement>
 
   <build>
-    <finalName>demo</finalName>
+    <finalName>device-registry</finalName>
     <plugins>
       <plugin>
         <groupId>org.wildfly.swarm</groupId>
         <artifactId>wildfly-swarm-plugin</artifactId>
         <version>${version.wildfly.swarm}</version>
+        <configuration>
+          <mainClass>net.wessendorf.wildfly.swarm.httpserver.rest.Server</mainClass>
+        </configuration>
         <executions>
           <execution>
             <goals>

@@ -11,7 +11,7 @@ import javax.ws.rs.core.Response;
 import java.util.Date;
 
 @Path("/registry/device")
-public class HelloWorldEndpoint {
+public class DeviceRegistryResource {
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)

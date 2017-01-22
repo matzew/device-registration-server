@@ -2,3 +2,11 @@
 
 Little playground, running HTTP service on Kubernetes with WildFly Swarm
 
+== Tests
+
+Some load testing can be performed by running:
+
+[source,bash]
+----
+artillery run test.yml 
+----

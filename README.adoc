@@ -1,0 +1,4 @@
+= WildFly-Swarm Services
+
+Little playground, running HTTP service on Kubernetes with WildFly Swarm
+

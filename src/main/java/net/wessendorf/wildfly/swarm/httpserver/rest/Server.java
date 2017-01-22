@@ -4,9 +4,6 @@ import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.wildfly.swarm.Swarm;
 import org.wildfly.swarm.jaxrs.JAXRSArchive;
 
-/**
- * Created by matzew on 1/22/17.
- */
 public class Server {
 
     public static void main(String... args) throws Exception {
